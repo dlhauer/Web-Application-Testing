@@ -2,7 +2,12 @@ import React from 'react';
 
 function Display(props) {
   return (
-    <h2>Display</h2>
+    <div className='display'>
+      <h2>At bat</h2>
+      <p>strikes: {props.count.strikes}</p>
+      <p>balls: {props.count.balls}</p>
+
+    </div>
   );
 }
 
