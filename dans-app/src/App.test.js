@@ -3,12 +3,6 @@ import { render } from '@testing-library/react';
 // import * as rtl from 'react-testing-library';
 import App from './App';
 
-// test('renders learn react link', () => {
-//   const { getByText } = render(<App />);
-//   const linkElement = getByText(/learn react/i);
-//   expect(linkElement).toBeInTheDocument();
-// });
-
 test('Display and Dashboard are rendered', () => {
   const {getByText} = render(<App />);
   getByText(/at bat/i);

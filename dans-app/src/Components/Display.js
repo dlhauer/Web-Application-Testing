@@ -6,7 +6,6 @@ function Display({count}) {
       <h2>At bat</h2>
       <p>strikes: {count.strikes}</p>
       <p>balls: {count.balls}</p>
-
     </div>
   );
 }

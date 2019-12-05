@@ -2,22 +2,6 @@ import React from 'react';
 
 function Dashboard({count, setCount}) {
 
-  // function handleStrike() {
-  //   props.setStrikes( props.strikes + 1 );
-  //   if ( props.strikes === 2 ) {
-  //     props.setStrikes(0);
-  //     props.setBalls(0);
-  //   }
-  // }
-
-  // function handleBall() {
-  //   props.setBalls( props.balls + 1 );
-  //   if ( props.balls === 3 ) {
-  //     props.setBalls(0);
-  //     props.setStrikes(0)
-  //   }
-  // }
-
   function handlePitch(type) {
     if (type === 'strike') {
       setCount({...count, strikes: count.strikes + 1});
@@ -41,8 +25,6 @@ function Dashboard({count, setCount}) {
       })
     }
   }
-
-  // console.log(count);
 
   return (
     <div className='dashboard'>
