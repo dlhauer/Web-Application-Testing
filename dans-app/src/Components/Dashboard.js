@@ -42,17 +42,27 @@ function Dashboard({count, setCount}) {
     }
   }
 
-  function handleFoul() {
-
-  }
+  // console.log(count);
 
   return (
     <div className='dashboard'>
       <h2>Dashboard</h2>
-      <button onClick={ () => handlePitch('strike')}>strike</button>
-      <button onClick={ () => handlePitch('ball')}>ball</button>
-      <button onClick={ () => handlePitch('foul')}>foul</button>
-      <button onClick={ () => handlePitch('hit')}>hit</button>
+      <button 
+        data-testid='strike-button'
+        onClick={ () => handlePitch('strike')}
+        >strike</button>
+      <button 
+        data-testid='ball-button'
+        onClick={ () => handlePitch('ball')}
+        >ball</button>
+      <button 
+        data-testid='foul-button'
+        onClick={ () => handlePitch('foul')}
+        >foul</button>
+      <button 
+        data-testid='hit-button'
+        onClick={ () => handlePitch('hit')}
+        >hit</button>
     </div>
   );
 }

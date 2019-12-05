@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Display(props) {
+function Display({count}) {
   return (
     <div className='display'>
       <h2>At bat</h2>
-      <p>strikes: {props.count.strikes}</p>
-      <p>balls: {props.count.balls}</p>
+      <p>strikes: {count.strikes}</p>
+      <p>balls: {count.balls}</p>
 
     </div>
   );
